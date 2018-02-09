@@ -61,7 +61,7 @@ custom_package_deployer:
   working_dir: "/tmp/hunchsdk_custom_libs" # This directory should exist 
 ```
 ### Start Hunch 
-Use the following command...  
+Use the following command to start hunch server.
 
 Refer [gunicorn](http://docs.gunicorn.org/en/stable/settings.html) documentation for more details and options available. 
    
@@ -124,7 +124,7 @@ For eg.
 os.environ["HUNCH_API_CONFIG"]="hunch_api_config.yaml"
 ```
 
-Typical configuration file looks like the following... 
+Typical configuration file looks like the following:
 
 ```yaml
 model_storage:                                # For more details on Model storage configuration refer "Model Blob Storage" section of this document. 
@@ -142,7 +142,7 @@ model_storage:                                # For more details on Model storag
 ```
 
 ### Server Configuration 
-Typical Server configuration looks like the following ...
+Typical Server configuration looks like the following:
 
 ```yaml
 rotation_status_file: "/tmp/rotation_status"      # Used in taking Hunch out of rotation and brnging Hunch back in rotation. The app should have write permissions to this fiel/dir. 
@@ -172,7 +172,7 @@ Usage is explained with the following set of examples.
 ##### Hello World
 Let us start with a very simple dummy model which we will call `HelloWorldModel`. This model simply returns the string `Hello World` on any (or no) input. The listing below illustrates the complete source code for publishing the model.
 
-Note the following points.
+Note the following points:
 
 1. We import the `json` package for processing JSON.
 2. We import the `hunchsdk.HunchApi` package.
